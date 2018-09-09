@@ -1,0 +1,398 @@
+body {
+  font-size: 14px;
+}
+
+.header-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  width:100%;
+  z-index: 2;
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  transition: .25s;
+}
+
+.header-wrapper.nav-fixed {
+  background-color: #fff;
+  transition: background
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.05);
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.05);
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  transition: .25s;
+}
+
+.header-wrapper.nav-down {
+  top: 0;
+  background-color: #fff;
+}
+
+.header-wrapper.nav-up {
+  top: -75px;
+  background: transparent;
+}
+
+.header-txt {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #767676;
+}
+
+.logo {
+  position: relative;
+  z-index: 2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.logo img {
+  max-width: 100px;
+  max-height: 50px;
+}
+
+.list-enduser {
+  margin-bottom: 0;
+}
+
+.list-enduser li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.list-enduser li.active,
+.list-enduser li:hover {
+  background-color: #4fbbfc;
+  border: 1px solid #767676;
+  border-radius: 5px;
+}
+
+.list-enduser li a {
+  font-size: 16px;
+  color: #767676;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.list-enduser li.active a,
+.list-enduser li.active a:hover,
+.list-enduser li.active a:focus,
+.list-enduser li:hover a {
+  color: #fff;
+}
+
+.residence-wrapper {
+  background-image: url(../image/home.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.residence-wrapper .residence-col {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.residence-wrapper:before {
+  content: "";
+  background-color: rgba(48, 45, 66, 0.75);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.residence-wrapper h1 {
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.theme-color,
+.residence-wrapper h1 span {
+  color: #4fbbfc;
+}
+
+.search-result-wrapper {
+  display: none;
+}
+
+.residence-form,
+.search-result-wrapper {
+  border: 2px solid #fff;
+  border-radius: 3px;
+  padding: 25px 20px;
+}
+
+.residence-form h5 {
+  color: #4fbbfc;
+}
+
+.residence-form h5 + h5 {
+  color: #fff;
+}
+
+.element-group {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.element-group input {
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  margin: 0 2px;
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+  background-color: #f0f1f2;
+  border-radius: 3px;
+  border: none;
+}
+
+.element-group input:focus {
+  border: none;
+  border-bottom: 3px solid #4fbbfc;
+  outline: none;
+}
+
+.element-group i {
+  display: none;
+}
+
+.btn-block .btn-submit {
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 2px solid #4fbbfc;
+  padding: 10px 20px;
+  max-width: 290px;
+  width: 100%;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-block .btn-submit:focus,
+.btn-block .btn-submit:hover {
+  background-color: #4fbbfc;
+}
+
+.residene-form-info {
+  margin-top: 15px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.residene-form-info a,
+.search-result h5,
+.search-result h6,
+.badge-id a {
+  color: #4fbbfc;
+}
+
+.search-result-wrapper {
+  padding-bottom: 0;
+}
+
+.search-result-wrapper .search-result {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.search-result .media-body {
+  border-bottom: 1px solid #fff;
+}
+
+.search-result:last-child {
+  margin-bottom: 0;
+}
+
+.search-result:last-child .media-body {
+  border-bottom: none;
+}
+
+.search-result h5 {
+  margin-bottom: 0;
+}
+
+.app-wrapper {
+  background-color: #ebebeb;
+  padding-top: 100px;
+}
+
+.app-wrapper .app-heading {
+  font-size: 32px;
+  color: #4fbbfc;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.app-content-block {
+
+}
+
+.app-img-block {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.app-image {
+  max-width: 250px;
+}
+
+.app-list li {
+  max-width: 170px;
+}
+
+.app-list li a {
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.app-list-item {
+  width: 200px;
+}
+
+.app-list-item li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #767676;
+  max-width: 200px;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 40px;
+  background-color: #2196f3;
+}
+
+.app-list-item li:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 20px solid #2196f3;
+}
+
+.app-list-item li p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.app-list-item .step-2 {
+  background-color: #03a9f4;
+}
+
+.app-list-item .step-3 {
+  background-color: #00bcd4;
+}
+
+.app-list-item .step-2:after {
+  border-top-color: #03a9f4;
+}
+
+.app-list-item .step-3:after {
+  border-top-color: #00bcd4;
+}
+
+.badge-id {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  max-width: 400px;
+  text-align: center;
+}
+
+.marketing-wrapper {
+  padding: 50px;
+}
+
+.aboutus-wrapper {
+  background-color: #eee;
+  padding: 50px;
+}
+
+.footer-wrapper {
+  background-color: #4fbbfc;
+}
+
+.footer-wrapper p {
+  padding-top: 15px;
+}
+
+@media (max-width: 767px) {
+  .header-wrapper .row {
+    display: block;
+  }
+  .header-txt-block {
+    width: 100%;
+  }
+  .residence-wrapper .residence-col {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .residene-form-info {
+    left: 0;
+  }
+  .app-wrapper .app-heading {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+  .app-list-item li,
+  .residence-wrapper h1 {
+    font-size: 20px;
+  }
+  .app-list,
+  .marketing-item {
+    text-align: center;
+  }
+  .residence-form h5 {
+    font-size: 1.2em;
+  }
+  .element-group input {
+    width: 40px;
+    height: 40px;
+  }
+  .marketing-item img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .marketing-wrapper,
+  .aboutus-wrapper,
+  .residence-wrapper {
+    padding: 50px 0;
+  }
+}
