@@ -20,6 +20,11 @@ $(function() {
     }
   });
 
+  $('.btn-verify').on('click', function(){
+    $('.form-section-block').hide();
+    $('.success-block').show();
+  });
+
   $(window).scroll(function(event) {
     didScroll = true;
   });
