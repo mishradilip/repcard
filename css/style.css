@@ -18,6 +18,11 @@ body {
   color: var(--theme-color)
 }
 
+a,
+a:focus {
+  outline: none;
+}
+
 .header-wrapper {
   position: absolute;
   width: 100%;
@@ -281,8 +286,264 @@ body {
   width: 100%;
 }
 
-.marguee-block {
+.marguee-block,
+.form-section-block {
   display: none;
+}
+
+.success-block {
+  max-width: 400px;
+  width: 100%;
+}
+
+.person-card {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #e2e2e2;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding: 15px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.person-card .person-img {
+  width: 40%;
+}
+
+.person-card .person-detail {
+  width: 60%;
+  color: #000;
+}
+
+.person-detail h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.person-detail p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.person-detail .person-list {
+  padding-left: 15px;
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.person-detail .person-list:before {
+  content: "";
+  background-color: var(--theme-color);
+  width: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.person-list a,
+.person-list a:hover,
+.person-list li {
+  color: #000;
+}
+
+.image-block {
+  position: relative;
+  width: auto;
+  display: inline-block;
+}
+
+.image-block:after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border-right: 30px solid var(--theme-color);
+  height: 70px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.image-block img {
+  position: relative;
+  z-index: 2;
+}
+
+.person-info {
+  margin-bottom: 25px;
+}
+
+.success-block .btn-group {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.success-block .btn-person {
+  padding: 9px 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 25px;
+  min-width: 150px;
+}
+
+.success-block .btn-review {
+  background-color: #e6ac28;
+}
+
+.success-block .btn-contact {
+  background-color: #4fbafc;
+}
+
+.modal-dialog {
+  border-radius: 0;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: 2px solid var(--theme-color);
+}
+
+.modal-header {
+  padding: 0;
+  border-bottom: none;
+  justify-content: flex-end;
+}
+
+.modal-header .close,
+.modal-header .close:hover {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  padding: 0px 10px 6px;
+  background-color: var(--theme-color);
+  color: var(--white);
+}
+
+.review-wrapper h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.review-wrapper label {
+  font-size: 14px;
+}
+
+.review-wrapper .form-control {
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.platform-btn {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+}
+
+.platform-btn .btn-platform {
+  min-width: 100px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.platform-btn .btn-yelp {
+  border: 1px solid #c3575a;
+  color: #c3575a;
+}
+
+.platform-btn .btn-yelp:hover {
+  background-color: #c3575a;
+  color: #fff;
+}
+
+.platform-btn .btn-facebook {
+  border: 1px solid #4561bb;
+  color: #4561bb;
+}
+
+.platform-btn .btn-facebook:hover {
+  background-color: #4561bb;
+  color: #fff;
+}
+
+.platform-btn .btn-google {
+  border: 1px solid #4ea76c;
+  color: #4ea76c;
+}
+
+.platform-btn .btn-google:hover {
+  background-color: #4ea76c;
+  color: #fff;
+}
+
+.review-icon {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.review-icon img {
+  max-width: 40px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.review-icon img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.review-icon + span {
+  width: 100%;
+  display: block;
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.review-submit {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.review-submit img {
+  max-width: 60px;
+}
+.review-submit h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.review-submit p {
+  font-size: 16px;
 }
 
 @media (max-width: 767px) {

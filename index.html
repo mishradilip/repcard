@@ -30,24 +30,110 @@
     <div class="container">
       <div class="row justify-content-end align-items-center banner-row">
         <div class="col-sm-7 col-12">
-          <h1 class="heading">
-            Verify a <span class="color-theme">REP</span> by entering their 6 digit ID badge number
-          </h1>
-          <form class="form-wrapper">
-            <input type="text" required maxlength="1" class="form-control">
-            <input type="text" required maxlength="1" class="form-control">
-            <input type="text" required maxlength="1" class="form-control">
-            <input type="text" required maxlength="1" class="form-control">
-            <input type="text" required maxlength="1" class="form-control">
-            <input type="text" required maxlength="1" class="form-control">
-            <button type="submit" class="btn-verify">Verify</button>
-          </form>
-          <p class="banner-txt">All reps verify their identity with a government issued ID</p>
+          <div class="form-section-block">
+            <h1 class="heading">
+              Verify a <span class="color-theme">REP</span> by entering their 6 digit ID badge number
+            </h1>
+            <form class="form-wrapper">
+              <input type="text" required maxlength="1" class="form-control">
+              <input type="text" required maxlength="1" class="form-control">
+              <input type="text" required maxlength="1" class="form-control">
+              <input type="text" required maxlength="1" class="form-control">
+              <input type="text" required maxlength="1" class="form-control">
+              <input type="text" required maxlength="1" class="form-control">
+              <a href="javascript:void(0)" class="btn-verify">Verify</a>
+            </form>
+            <p class="banner-txt">All reps verify their identity with a government issued ID</p>
+          </div>
+          <div class="success-block">
+            <div class="person-card">
+              <div class="person-img">
+                <div class="image-block"><img src="https://via.placeholder.com/120X90" class="img-fluid" /></div>
+              </div>
+              <div class="person-detail">
+                <h4>BRADLEY MORTENSEN</h4>
+                <p>Route Manager</p>
+                <ul class="list-unstyled person-list">
+                  <li><a href="tel:8083342580">8083342580</a></li>
+                  <li><a href="www.Bulwarkpest.com">www.Bulwarkpest.com</a></li>
+                  <li><a href="mailto:Mortenbradley@gmail.com">Mortenbradley@gmail.com</a></li>
+                </ul>
+              </div>
+            </div>
+            <p class="person-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla vel modi numquam, expedita delectus. Delectus natus quae illo eaque rerum, itaque a error suscipit, sed expedita minus id fugit amet!</p>
+            <div class="btn-group">
+              <a class="btn-person btn-review" href="javascript:void(0)" data-toggle="modal" data-target="#reviewModal">Leave a review</a>
+              <a class="btn-person btn-contact" href="javascript:void(0)" data-toggle="modal" data-target="#reviewSubmitedModal">Contact</a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row banner-text-block">
         <div class="col-12">
           <p class="banner-txt-bottom offset-sm-5">Get ID Badges for the whole team! <a href="javascript:void(0)">Click Here</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="review-wrapper">
+              <h3>Hey Bradley Mortensen</h3>
+              <form class="review-form">
+                <div class="form-group">
+                  <p>How was your experience with me?</p>
+                  <div class="review-icon">
+                    <img src="images/star-fill.png" class="img-fluid" alt="Star" />
+                    <img src="images/star-fill.png" class="img-fluid" alt="Star" />
+                    <img src="images/star-fill.png" class="img-fluid" alt="Star" />
+                    <img src="images/star-fill.png" class="img-fluid" alt="Star" />
+                    <img src="images/star-fill.png" class="img-fluid" alt="Star" />
+                  </div>
+                  <span class="text-center">Tap the stars to select</span>
+                </div>
+                <div class="form-group">
+                  <label>Add Title</label>
+                  <input type="text" class="form-control" placeholder="Ex. Great experience!">
+                </div>
+                <div class="form-group">
+                  <label>Add a comment</label>
+                  <textarea class="form-control" placeholder="Add a comment"></textarea>
+                </div>
+                <div class="form-group">
+                  <p>Select your favorite review platform</p>
+                  <div class="platform-btn">
+                    <a class="btn-platform btn-yelp" href="javascript:void(0)">YELP</a>
+                    <a class="btn-platform btn-facebook" href="javascript:void(0)">FACEBOOK</a>
+                    <a class="btn-platform btn-google" href="javascript:void(0)">GOOGLE</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="reviewSubmitedModal" tabindex="-1" role="dialog" aria-labelledby="reviewSubmitedModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="review-submit">
+              <img src="images/thumbs-up.png" class="img-fluid" alt="Thumbs Up" />
+              <h3>Your review has been copied</h3>
+              <p>Now you just have to paste it</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
