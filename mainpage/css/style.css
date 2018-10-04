@@ -90,7 +90,48 @@ a:focus {
 .banner-section {
   display: block;
   margin-bottom: 100px;
-  background: url(../images/blur-element.png) no-repeat top right;
+  background: url(../images/blur-element.png) no-repeat top right, url(../images/pattern-left.png) no-repeat left center;
+  background-size: auto, 45%;
+  padding-top: 60px;
+}
+
+.banner-form-section {
+  background: url(../images/header-iphone.png) no-repeat center center;
+  background-size: 59%;
+  padding: 20px 170px;
+}
+
+.banner-form-heading {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.banner-form .banner-card-img {
+  margin-bottom: 15px;
+}
+.banner-form .form-group {
+  margin-bottom: 10px;
+}
+
+.banner-form .form-control {
+  height: 42px;
+  border-radius: 6px;
+}
+
+.banner-form .btn-submit {
+  background-color: #e54d42;
+  border-radius: 10px;
+  color: #fff;
+  width: 100%;
+  border: 0;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.banner-form-section .banner-form {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .banner-content h2 {
@@ -131,7 +172,7 @@ a:focus {
 /* features style */
 .features-section {
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .featres-block {
@@ -199,7 +240,7 @@ a:focus {
 /* use-cases style */
 .use-cases-section {
   padding-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 130px;
 }
 
 .use-cases-section .heading-block {
@@ -422,12 +463,29 @@ a:focus {
 /* Footer Style */
 
 @media (max-width:767px) {
+  .header-row {
+    display: block;
+    text-align: center;
+  }
+  .header-row > .col {
+    width: 100%;
+  }
+  .menu-list {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .banner-form-section {
+    background-size: 100%;
+    max-width: 375px;
+    padding: 70px;
+  }
   .banner-section {
-    background-position: center right;
+    background-position: top right, center left;
   }
   .banner-section .banner-image {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 50px;
   }
   .featres-block {
     margin: 15px;
@@ -439,6 +497,10 @@ a:focus {
   }
   .get-it-section {
     background: none;
+  }
+  .get-it-section h1,
+  .form-info h1 {
+    font-size: 2.5rem;
   }
   .get-it-block h3 {
     text-align: center;

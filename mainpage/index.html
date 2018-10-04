@@ -11,7 +11,7 @@
 <body>
   <header class="header-wrapper">
     <div class="container">
-      <div class="row justify-content-between align-items-center">
+      <div class="row justify-content-between align-items-center header-row">
         <div class="col">
           <a href="javascript:void(0)" class="logo">
             <img src="images/rc-logo.png" class="img-fluid" alt="Repcard" />
@@ -46,7 +46,24 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-6 banner-image">
-            <img src="images/header-image.png" class="img-fluid" alt="" />
+            <div class="banner-form-section">
+              <form class="banner-form">
+                <h2 class="banner-form-heading">ENTER YOUR INFO TO VIEW A REPCARD</h2>
+                <img class="img-fluid banner-card-img" src="images/card.jpg" />
+                <div class="form-group">
+                  <input name="name" placeholder="Enter Name" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <input name="number" placeholder="Number" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <input name="email" placeholder="Email" type="email" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <button class="btn-submit">SUBMIT</button>
+                </div>
+              </form>
+            </div>
           </div>
           <div class="col-12 col-md-6 banner-content">
             <h2>Your <span class="theme-color">business card</span> that creates credibility for your people and <span class="primary-color">reviews</span> for your business.</h2>
