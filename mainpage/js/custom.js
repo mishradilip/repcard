@@ -5,6 +5,18 @@ $(function() {
   var delta = 5;
   var navbarHeight = $('header').outerHeight();
 
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    responsiveClass:true,
+    nav:false,
+    center:true,
+    dots:false,
+    items:1,
+    autoplay:true,
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut'
+  })
+
   $('input').blur(function() {
     var $this = $(this);
     if ($this.val()){

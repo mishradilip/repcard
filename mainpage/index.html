@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Asap:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 <body>
   <header class="header-wrapper">
@@ -44,34 +46,71 @@
   <div class="main-wrapper clearfix">
     <section class="banner-section">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-6 banner-image">
-            <div class="banner-form-section">
-              <form class="banner-form">
-                <h2 class="banner-form-heading">ENTER YOUR INFO TO VIEW A REPCARD</h2>
-                <img class="img-fluid banner-card-img" src="images/card.jpg" />
-                <div class="form-group">
-                  <input name="name" placeholder="Enter Name" type="text" class="form-control" />
+        <div class="row banner-row align-items-top">
+          <div class="col-12 col-md-5 banner-image">
+            <div class="banner-slider-section">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <img src="images/Screen-1.jpg" class="img-fluid">
                 </div>
-                <div class="form-group">
-                  <input name="number" placeholder="Number" type="text" class="form-control" />
+                <div class="item">
+                  <img src="images/Screen-2.jpg" class="img-fluid">
                 </div>
-                <div class="form-group">
-                  <input name="email" placeholder="Email" type="email" class="form-control" />
+                <div class="item">
+                  <img src="images/Screen-3.jpg" class="img-fluid">
                 </div>
-                <div class="form-group">
-                  <button class="btn-submit">SUBMIT</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-7 banner-content">
+            <h2>Be <span class="primary-color">Legit.</span> Get Repcard.</h2>
+            <div class="banner-txt">
+              <p>Get a sample repcard by entering you number below</p>
+              <form class="banner-form-block">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Enter your phone number">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Submit</button>
+                  </div>
                 </div>
               </form>
             </div>
-          </div>
-          <div class="col-12 col-md-6 banner-content">
-            <h2>Your <span class="theme-color">business card</span> that creates credibility for your people and <span class="primary-color">reviews</span> for your business.</h2>
-            <div class="banner-txt">
-              <p>RepCard is not just a "digital business card".</p>
-              <p>Schedule a demo to find out more about all features and benefits for your business!</p>
+            <div class="testimonial-block">
+              <div id="testimonialSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <p>Our reps have been super happy with their RepCard ID badges. It provides them <strong class="primary-color">credibility at the door</strong> and <strong class="primary-color">instant trust</strong> with the customer. They love knowing they can be verified at any time if needed and prove their legitimacy.</p>
+                    <div class="media">
+                      <img class="mr-3 rounded-circle" src="https://via.placeholder.com/40x40/#579cc6" alt="">
+                      <div class="media-body">
+                        <h5 class="mt-0">Dilip Mishra</h5>
+                        VP of Sales - ClearHome
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <p>Our reps have been super happy with their RepCard ID badges. It provides them <strong class="primary-color">credibility at the door</strong> and <strong class="primary-color">instant trust</strong> with the customer. They love knowing they can be verified at any time if needed and prove their legitimacy.</p>
+                    <div class="media">
+                      <img class="mr-3 rounded-circle" src="https://via.placeholder.com/40x40/#579cc6" alt="">
+                      <div class="media-body">
+                        <h5 class="mt-0">Jon Shields</h5>
+                        VP of Sales - ClearHome
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <p>Our reps have been super happy with their RepCard ID badges. It provides them <strong class="primary-color">credibility at the door</strong> and <strong class="primary-color">instant trust</strong> with the customer. They love knowing they can be verified at any time if needed and prove their legitimacy.</p>
+                    <div class="media">
+                      <img class="mr-3 rounded-circle" src="https://via.placeholder.com/40x40/#579cc6" alt="">
+                      <div class="media-body">
+                        <h5 class="mt-0">Dilip Mishra</h5>
+                        VP of Sales - ClearHome
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <button class="btn-demo">Get a demo</button>
           </div>
         </div>
       </div>
@@ -84,15 +123,15 @@
               <figure class="col-12 col-md-6 d-flex">
                 <div class="img-block"><img src="images/follow-up.png" class="img-fluid" /></div>
                 <figcaption>
-                  <h5>Follow Up</h5>
-                  <p>Organize your team members and recruiting process with custom status' and filters.</p>
+                  <h5>Automated Follow Up</h5>
+                  <p>Let RepCard do auto-follow up via text or email with those potential customers. You can customize the messages to your own style.</p>
                 </figcaption>
               </figure>
               <figure class="col-12 col-md-6 d-flex">
-                <div class="img-block"><img src="images/Management.png" class="img-fluid" /></div>
+                <div class="img-block"><img src="images/Business-Card.png" class="img-fluid" /></div>
                 <figcaption>
-                  <h5>Management</h5>
-                  <p>Let RepCard do auto-follow up via text or email with those potential customers. You can cutomize the messages to your own style.</p>
+                  <h5>Smart ID Badge</h5>
+                  <p>Customers will gain instant trust by scaning your ID badge to verify your authenticity.</p>
                 </figcaption>
               </figure>
               <figure class="col-12 col-md-6 d-flex">
@@ -112,7 +151,7 @@
               <figure class="col-12 col-md-6 d-flex">
                 <div class="img-block"><img src="images/Business-Card.png" class="img-fluid" /></div>
                 <figcaption>
-                  <h5>Business Card</h5>
+                  <h5>Digital Business Card</h5>
                   <p>Now give business cards out digitally and enjoy the credibility your online profile provides to your leads/customers.</p>
                 </figcaption>
               </figure>
@@ -280,6 +319,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/custom.js"></script>
 </body>
 </html>
