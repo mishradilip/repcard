@@ -78,14 +78,15 @@ a:focus {
   display: block;
 }
 
-.menu-dropdown-block a {
+.menu-list .menu-dropdown-block a {
   padding: 10px 15px;
   display: block;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  color: var(--dark);
 }
 
-.menu-dropdown-block a:hover {
+.menu-list .menu-dropdown-block a:hover {
   background-color: var(--theme-color);
   color: var(--white);
   transition: all 0.2s ease-in-out;
