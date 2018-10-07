@@ -185,7 +185,7 @@ a:focus {
 .banner-content .banner-txt {
   font-size: 20px;
   line-height: 1.5;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
   color: var(--white);
 }
 
@@ -213,6 +213,9 @@ a:focus {
 
 .testimonial-block {
   color: var(--white);
+  background: url(../images/Quote-icon-for-testimonial.png) no-repeat top left;
+  padding-top: 50px;
+  padding-left: 30px;
 }
 
 .testimonial-block .carousel-item .media-body {
@@ -281,8 +284,8 @@ a:focus {
 }
 
 .featres-block figure .img-block img {
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .featres-block h5 {
@@ -339,6 +342,8 @@ a:focus {
   border: 3px solid #dbdbdb;
   padding: 25px;
   position: relative;
+  height: 100%;
+  padding-bottom: 0;
 }
 
 .use-cases-section .use-cases-item:hover{
@@ -611,5 +616,12 @@ a:focus {
   }
   .use-cases-section h2 {
     font-size: 2.5rem;
+  }
+  .bran-logo-section .bran-logos {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 20px;
+    vertical-align: top;
+    text-align: center;
   }
 }
